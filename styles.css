@@ -475,7 +475,6 @@ img { display: block; max-width: 100%; }
   background: var(--ink);
   color: #fff;
   font-family: var(--mono);
-  font-size: 22px;
+  font-size: 34px;
   font-weight: 600;
-  letter-spacing: -0.04em;
 }

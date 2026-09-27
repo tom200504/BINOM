@@ -26,6 +26,6 @@ Puis ajouter le domaine `binom.fr` dans *Settings → Domains*.
 
 ## À faire avant la mise en ligne
 
-- **Photo** : `assets/tom.jpg` (480×480). Pas de photo pour le pôle dev, volontairement : l'équipe dev a vocation à s'agrandir.
+- **Photo** : `assets/tom.jpg` (480×480). Antoine est affiché avec son initiale : déposer `assets/antoine.jpg` et remplacer le `<span class="person-mark">` par un `<img class="person-photo">` le jour où il y a une photo.
 - **Mentions légales** : obligatoires pour une activité pro en France (identité, SIRET, hébergeur Vercel). À ajouter en pied de page.
 - **Email** : tous les CTA pointent vers `tom.lemenand@gmail.com` (sujet « Renfort dev — [nom entreprise] » + trame de message pré-remplie). Un rechercher/remplacer suffit pour passer à une adresse `@binom.fr`.
