@@ -9,7 +9,7 @@ HTML + CSS statiques, aucune dépendance, aucun build. Seule ressource externe :
 ```
 index.html            la page (7 sections, ancres #offre #methode #pourquoi #equipe #contact)
 styles.css            styles mobile-first
-assets/               favicon + photos placeholder
+assets/               favicon + photo de Tom
 vercel.json           cache des assets + en-têtes de sécurité
 ```
 
@@ -26,6 +26,6 @@ Puis ajouter le domaine `binom.fr` dans *Settings → Domains*.
 
 ## À faire avant la mise en ligne
 
-- **Photos** : déposer `assets/tom.jpg` et `assets/antoine.jpg` (carré, ~480×480) et remplacer les `src` des deux `<img class="person-photo">` dans `index.html`.
+- **Photo** : `assets/tom.jpg` (480×480). Pas de photo pour le pôle dev, volontairement : l'équipe dev a vocation à s'agrandir.
 - **Mentions légales** : obligatoires pour une activité pro en France (identité, SIRET, hébergeur Vercel). À ajouter en pied de page.
 - **Email** : tous les CTA pointent vers `tom.lemenand@gmail.com` (sujet « Renfort dev — [nom entreprise] » + trame de message pré-remplie). Un rechercher/remplacer suffit pour passer à une adresse `@binom.fr`.
