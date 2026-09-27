@@ -1,5 +1,13 @@
 /* Binom — one-page. Mobile-first, sans dépendance JS. */
 
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("/assets/fonts/inter-var-latin.woff2") format("woff2");
+}
+
 :root {
   --ink: #0b0d12;
   --ink-2: #3d4250;
@@ -10,7 +18,6 @@
   --accent: #2346ff;
   --accent-ink: #1733d6;
   --accent-soft: #eef1ff;
-  --ok: #16a34a;
 
   --radius: 14px;
   --radius-sm: 10px;
@@ -174,35 +181,13 @@ img { display: block; max-width: 100%; }
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  padding: 6px 12px 6px 10px;
+  padding: 6px 12px;
   border: 1px solid var(--line);
   border-radius: 999px;
   font-size: 14px;
   font-weight: 500;
   color: var(--ink-2);
   background: #fff;
-}
-.status-dot {
-  position: relative;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: var(--ok);
-}
-.status-dot::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: 50%;
-  background: var(--ok);
-  animation: pulse 2s ease-out infinite;
-}
-@keyframes pulse {
-  0% { transform: scale(1); opacity: .6; }
-  100% { transform: scale(2.6); opacity: 0; }
-}
-@media (prefers-reduced-motion: reduce) {
-  .status-dot::after { animation: none; }
 }
 
 .hero h1 {
@@ -434,15 +419,9 @@ img { display: block; max-width: 100%; }
   text-align: center;
 }
 .cta-inner { display: flex; flex-direction: column; align-items: center; }
-.cta h2 { margin-top: 24px; font-size: clamp(32px, 7vw, 56px); letter-spacing: -0.035em; }
+.cta h2 { margin-top: 0; font-size: clamp(32px, 7vw, 56px); letter-spacing: -0.035em; }
 .cta .section-text { color: #b9bdc8; max-width: 560px; }
 .cta .btn { margin-top: 36px; }
-
-.status-invert {
-  background: transparent;
-  border-color: rgba(255, 255, 255, .18);
-  color: #d7dae2;
-}
 
 .cta-mail {
   margin-top: 20px;
@@ -478,3 +457,13 @@ img { display: block; max-width: 100%; }
   font-size: 34px;
   font-weight: 600;
 }
+
+.site-footer a { color: #d7dae2; text-underline-offset: 3px; }
+.site-footer a:hover { color: #fff; }
+
+/* ---------- Mentions légales ---------- */
+
+.legal h1 { margin-top: 14px; font-size: clamp(32px, 6vw, 48px); }
+.legal h2 { margin-top: 40px; font-size: 20px; letter-spacing: -0.015em; }
+.legal p { margin-top: 12px; color: var(--ink-2); font-size: 16px; }
+.legal a { color: var(--accent); text-underline-offset: 3px; }
