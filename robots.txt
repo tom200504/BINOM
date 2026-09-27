@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://binom-dev.vercel.app/sitemap.xml
